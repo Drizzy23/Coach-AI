@@ -26,7 +26,7 @@
             color: #ffffff;
             line-height: 1.6;
             overflow-x: hidden;
-            cursor: none;
+             
             padding: 0 1rem;
         }
 
@@ -100,7 +100,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             font-size: 1.1rem;
-            cursor: none;
+             
             transition: all 0.3s ease;
             backdrop-filter: blur(5px);
         }
@@ -310,25 +310,11 @@
             }
         }
 
-        .custom-cursor {
-            width: 12px;
-            height: 12px;
-            background: #ffffff;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0;
-            transition: opacity 0.3s ease-out;
-            box-shadow: 
-                0 0 10px #ffffff,
-                0 0 20px #ffffff,
-                0 0 30px #ffffff;
-        }
+      
 
         /* Add hover effect for interactive elements */
         a, button, [role="button"] {
-            cursor: none;
+             
         }
 
         a:hover ~ .custom-cursor,
@@ -915,7 +901,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            cursor: none;
+             
             transition: all 0.3s ease;
             position: relative;
         }
@@ -1186,7 +1172,7 @@
         });
 
         function copyCA() {
-            const ca = "https://x.com/CryptoCoachAI"; // Replace with your actual contract address
+            const ca = "YOUR_CONTRACT_ADDRESS_HERE"; // Replace with your actual contract address
             navigator.clipboard.writeText(ca).then(() => {
                 const button = document.querySelector('.ca-copy-btn');
                 button.classList.add('copied');
@@ -1201,6 +1187,5 @@
         <p>© 2024 Coach AI. All Rights Reserved.</p>
     </footer>
 </body>
-
 
 </html>
